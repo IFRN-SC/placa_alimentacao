@@ -1144,9 +1144,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND2" gate="1" x="71.12" y="55.88" rot="R90"/>
 <instance part="GND3" gate="1" x="10.16" y="55.88" rot="R90"/>
 <instance part="SUPPLY1" gate="+8V" x="5.08" y="68.58" rot="R90"/>
-<instance part="SUPPLY2" gate="+8V" x="30.48" y="66.04" rot="R90"/>
+<instance part="SUPPLY2" gate="+8V" x="27.94" y="66.04" rot="R90"/>
 <instance part="SUPPLY3" gate="+5V" x="71.12" y="66.04" rot="R270"/>
-<instance part="PONTE-H" gate="-1" x="15.24" y="33.02" rot="R90"/>
 <instance part="PONTE-H" gate="-2" x="50.8" y="33.02" rot="R90"/>
 <instance part="SENSORES" gate="-1" x="27.94" y="33.02" rot="R90"/>
 <instance part="SENSORES" gate="-2" x="53.34" y="33.02" rot="R90"/>
@@ -1168,7 +1167,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY9" gate="+8V" x="73.66" y="35.56" rot="R90"/>
 <instance part="SUPPLY10" gate="+5V" x="93.98" y="35.56" rot="R270"/>
 <instance part="SUPPLY5" gate="G$1" x="22.86" y="33.02"/>
-<instance part="3.3V" gate="G$1" x="109.22" y="66.04" rot="R270"/>
+<instance part="3.3V" gate="G$1" x="114.3" y="66.04" rot="R270"/>
+<instance part="PONTE-H" gate="-1" x="15.24" y="35.56" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1222,6 +1222,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="BUCK" gate="G$1" pin="IN+"/>
 <pinref part="SUPPLY2" gate="+8V" pin="+8V"/>
+<wire x1="30.48" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CHAVE" gate="-2" pin="S"/>
@@ -1229,10 +1230,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="+8V" pin="+8V"/>
-<pinref part="PONTE-H" gate="-1" pin="S"/>
 <wire x1="10.16" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SHIELD" gate="-1" pin="S"/>
 <wire x1="17.78" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="PONTE-H" gate="-1" pin="S"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
 <junction x="15.24" y="30.48"/>
 </segment>
 </net>
@@ -1263,6 +1265,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
 <pinref part="3.3V" gate="G$1" pin="VCC"/>
+<wire x1="111.76" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
